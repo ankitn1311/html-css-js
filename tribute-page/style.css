@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300,800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root {
+  --primary-color: #dddddd;
+  --secondary-color: #333333;
+  --code-background: #eeeeee;
+}
+html {
+  font-size: 16px;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+}
+
+body {
+  background-color: var(--primary-color);
+} 
+
+#main {
+    margin: 1rem;
+    background-color: var(--code-background);
+    border-radius: 10px;
+}
+
+#title {
+    font-weight: 800;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+#main p {
+    text-align : center;
+    margin-top: 1rem;
+}
+
+#image {
+    width: 100%;
+    padding: 1rem;
+}
+
+#img-caption {
+    text-align: center;
+    padding: 0 3rem;
+    font-style: italic;
+
+}
+
+#tribute-info {
+    padding: 3rem 10rem;
+
+}
+
+#tribute-info h3{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#tribute-info li {
+    padding: 10px;
+}
+
+#tribute-link {
+    display: block;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    #tribute-info {
+        padding: 1rem;
+        margin: 1rem;
+    }
+}
