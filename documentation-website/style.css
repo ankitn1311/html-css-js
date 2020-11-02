@@ -4,8 +4,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-
+:root {
+  --primary-color: #dddddd;
+  --secondary-color: #333333;
+  --code-background: #eeeeee;
+}
 html {
   font-size: 16px;
   font-family: Lato, sans-serif;
@@ -13,79 +18,120 @@ html {
 }
 
 body {
-  background-color: #eeeeee;
+  background-color: var(--primary-color);
+}
+#main-doc{
+  position: relative;
 }
 
-#main-doc {
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 20vw;
+  border-right: 2px solid var(--secondary-color);
+  height: 100vh;
 }
 
-nav {
-  /* display: flex;
-  flex-direction: column; */
-  /* position: absolute; */
-  
-}
-nav header {
+#navbar header h1{
   font-size: 2rem;
-  font-weight: 600;
-  border-bottom: 1px solid black;
-  padding: 15px;
-  
+  overflow: hidden;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 1rem 1rem;
 }
 
-nav ul {
+#navbar ul {
+
   display: flex;
   flex-direction: column;
 }
 
-nav ul li {
+#navbar ul li {
   list-style-type: none;
-  padding: 20px;
-  border-bottom: 1px solid black;
-
 }
 
-nav ul li a {
+#navbar ul li a {
+  color: var(--secondary-color);
+  width: 100%;
   text-decoration: none;
+  padding: 1rem;
+  display: inline-block;
+  border-top: 1px solid var(--secondary-color);
 }
 
-section {
-  margin: 20px;
+#navbar ul li a:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+aside {
+  margin-left: 20vw;
+  margin-top: 20px;
+  padding: 20px;
+  position: relative;
 }
 
 section header {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
-@media(max-width: 600px) {
-  section header {
-    font-size: 1.5rem;
+section p {
+  font-size: 1rem;
+  padding: 1rem;
+}
+section ul {
+  margin-bottom: 1rem;
+}
+section ul li {
+  margin-left: 3rem;
+}
+
+code {
+  display: block;
+  background: var(--code-background);
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 2rem ;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  left:0px; 
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem;
+  border-top:1px solid var(--secondary-color);
+  width: 100%;
+  font-style: italic;
+}
+section{
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 700px) {
+  #navbar {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: auto;
+  }
+  aside {
+    margin: 5px;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    margin: 0;
+    padding: 0;
   }
 }
-
-section code, p {
-  margin-left: 50px;
-}
-
-.code {
-  padding: 10px;
-  margin: 5px;
-  border-radius: 10px;
-  background-color: #dddddd;
-}
-
-aside {
-  border-left: 2px solid darkgray;
-}
-
-p {
-  padding: 10px;
-  margin: 0 10px 10px 10px;
-}
-
-section ul {
-  margin-left : 100px;
-}
-

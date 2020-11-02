@@ -40,7 +40,6 @@ section {
     font-style: italic;
     padding-bottom: 2rem;
 }
-
 #survey-form {
     padding: 2rem;
     background-color: var(--form-background); 

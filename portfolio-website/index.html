@@ -56,5 +56,11 @@
         <p id="f-text">How do you take your coffee?</p>
         <h2 id="last-text">@ Created by ankitn1311 (Ankit Negi)</h2>
     </footer>
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            nav.classList.toggle('scroll', window.scrollY > 0);
+        })
+    </script>
 </body>
 </html>

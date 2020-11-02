@@ -11,6 +11,7 @@
     margin : 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -29,11 +30,21 @@ nav {
     left: 0px;
     z-index: 10;
     opacity: 1;
+    padding: 5px;
 }
 nav:hover {
     background-color: brown;
 }
 
+nav.scroll {
+    background-color: #aaaaaa;
+    padding: 0px;
+    box-shadow: 5px 0 15px rgba(0,0,0,0.2);
+}
+nav.scroll ul li a {
+    
+    color: var(--primary-color);
+}
 nav ul {
     display: flex;  
 }
