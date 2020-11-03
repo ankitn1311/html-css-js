@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+  background: #aaa;
+}
+
+.container {
+  margin: 1rem;
+  background: pink;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.container header {
+  background: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: .5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1rem;
+}
+
+.container header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container header ul li {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.container header ul li:hover {
+  background: pink;
+}
+
+.container main {
+  background: #aaa;
+  height: 100vh;
+  padding: 1rem;
+  margin-top: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1rem;
+}
+
+.container main section p {
+  font-size: 1.5rem;
+  color: green;
+}
+/*# sourceMappingURL=style.css.map */
